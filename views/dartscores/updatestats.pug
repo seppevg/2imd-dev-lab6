@@ -9,11 +9,11 @@ html(lang="en")
     body 
         h1 Premier League 180's
         h2 Update stats of players
-        form(action="", method="POST")
+        form(id="updateForm")
             select(name="player", id="player")
                 each player in players
                     option(value= player.id)= player.name
             input(type="text", name="score", id="score")
-            input(type="submit", value="Update stats")
+            input(type="submit", value="Update stats", id="button")
         script(src="../primus/primus.js")
         script(src="../javascripts/app.js")
