@@ -25,7 +25,7 @@ if (document.getElementById("updateForm")) {
         let score = document.getElementById("score").value;
         document.getElementById("score").value = "";
 
-        if (score == "") {
+        if (score == "" || isNaN(score)) {
             error.style.display = "block";
             error.innerText = "Please enter a valid number.";
         }
