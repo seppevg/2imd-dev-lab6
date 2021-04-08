@@ -13,8 +13,10 @@ html(lang="en")
                 th Name 
                 th Nickname 
                 th 180's 
-            each player, key in players
+            each player in players
                 tr(id= player.id)
                     td= player.name
                     td= player.nickname
                     td= player.score
+        script(src="../primus/primus.js")
+        script(src="../javascripts/index.js") 
