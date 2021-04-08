@@ -1,60 +1,60 @@
 const players = [
     {
-        "id": "van-gerwen",
+        "id": "michael-van-gerwen",
         "name": "Michael van Gerwen",
         "nickname": "De Groene Sloopkogel",
-        "score": 11
+        "score": 19
     },
     {
-        "id": "vd-bergh",
+        "id": "dimitri-van-den-bergh",
         "name": "Dimitri van den Bergh",
-        "nickname": "Dancing Dimi",
+        "nickname": "The Dreammaker",
         "score": 21
     },
     {
-        "id": "clayton",
+        "id": "jonny-clayton",
         "name": "Jonny Clayton",
         "nickname": "The Ferret",
         "score": 20
     },
     {
-        "id": "aspinall",
+        "id": "nathan-aspinall",
         "name": "Nathan Aspinall",
         "nickname": "The Asp",
         "score": 18
     },
     {
-        "id": "cross",
+        "id": "rob-cross",
         "name": "Rob Cross",
         "nickname": "Voltage",
         "score": 15
     },
     {
-        "id": "anderson",
+        "id": "gary-anderson",
         "name": "Gary Anderson",
         "nickname": "The Flying Scotsman",
         "score": 19
     },
     {
-        "id": "wright",
+        "id": "peter-wright",
         "name": "Peter Wright",
         "nickname": "Snakebite",
         "score": 16
     },
     {
-        "id": "de-sousa",
+        "id": "josé-de-sousa",
         "name": "José de Sousa",
         "nickname": "The Special One",
         "score": 14
     },
     {
-        "id": "wade",
+        "id": "james-wade",
         "name": "James Wade",
         "nickname": "The Machine",
         "score": 11
     },
     {
-        "id": "durrant",
+        "id": "glen-durrant",
         "name": "Glen Durrant",
         "nickname": "Duzza",
         "score": 8
