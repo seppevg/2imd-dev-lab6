@@ -20,17 +20,25 @@ if (document.getElementById("updateForm")) {
     document.getElementById("button").addEventListener("click", (event) => {
         event.preventDefault();
 
+        let error = document.querySelector(".error");
         let id = document.getElementById("player").value;
         let score = document.getElementById("score").value;
         document.getElementById("score").value = "";
 
-        primus.write({
-            "action": "updateStats",
-            "data": {
-                "id": id,
-                "score": score
-            }
-        })
+        if (score == "") {
+            error.style.display = "block";
+            error.innerText = "Please enter a valid number.";
+        }
+        else {
+            error.style.display = "none";
+            error.innerText = "";
+            primus.write({
+                "action": "updateStats",
+                "data": {
+                    "id": id,
+                    "score": score
+                }
+            })
+        }
     });
-
 }
