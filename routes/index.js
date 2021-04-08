@@ -19,43 +19,43 @@ const players = [
     "name": "Jonny Clayton",
     "nickname": "The Ferret",
     "score": 20
-  }
+  },
   {
     "id": "aspinall",
     "name": "Nathan Aspinall",
     "nickname": "The Asp",
     "score": 18
-  }
+  },
   {
     "id": "cross",
     "name": "Rob Cross",
     "nickname": "Voltage",
     "score": 15
-  }
+  },
   {
     "id": "anderson",
     "name": "Gary Anderson",
     "nickname": "The Flying Scotsman",
     "score": 19
-  }
+  },
   {
     "id": "wright",
     "name": "Peter Wright",
     "nickname": "Snakebite",
     "score": 16
-  }
+  },
   {
     "id": "de-sousa",
     "name": "José de Sousa",
     "nickname": "The Special One",
     "score": 14
-  }
+  },
   {
     "id": "wade",
     "name": "James Wade",
     "nickname": "The Machine",
     "score": 11
-  }
+  },
   {
     "id": "durrant",
     "name": "Glen Durrant",
