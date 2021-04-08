@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Dart Scores | Dashboard
+        link(rel='stylesheet', href='./stylesheets/style.css')
+    body 
+        h1 Premier League
+        h2 Players and their amount of 180's so far
+        table 
+            tr
+                th Name 
+                th Nickname 
+                th # 180's 
+            each player in players
+                tr(id= player.id)
+                    td(class="name")= player.name
+                    td(class="nickname")= player.nickname
+                    td(class="score")= player.score
+        script(src="../primus/primus.js")
+        script(src="../javascripts/dashboard.js") 
