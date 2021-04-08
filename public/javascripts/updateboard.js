@@ -21,6 +21,8 @@ if (document.getElementById("updateForm")) {
             error.innerText = "Please enter a valid number.";
         }
         else {
+            var audio = new Audio("../audio/180.mp3");
+            audio.play();
             error.style.display = "none";
             error.innerText = "";
             primus.write({

@@ -7,13 +7,13 @@ html(lang="en")
         title Dart Scores | Update stats
         link(rel='stylesheet', href='./stylesheets/style.css')
     body 
-        h1 Premier League 180's
-        h2 Update stats of players
+        h1 Premier League
+        h2 Update amount of 180's per player
         form(id="updateForm")
             select(name="player", id="player")
                 each player in players
                     option(value= player.id)= player.name
-            input(type="text", name="score", id="score")
+            input(type="text", placeholder="Amount of 180's", name="score", id="score")
             input(type="submit", value="Update stats", id="button")
         .error
         script(src="../primus/primus.js")
