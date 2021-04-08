@@ -6,19 +6,28 @@ primus = Primus.connect("http://localhost:3000", {
     }
 });
 
+primus.on("data", (json) => {
+    if (json.action === "updateStats") {
+        let id = json.data.id;
+        let score = json.data.score;
+        let scoreInput = document.querySelector(`#${id} > .score`);
+        scoreInput.innerText = score;
+    }
+});
+
 if (document.getElementById("updateForm")) {
 
     document.getElementById("button").addEventListener("click", (event) => {
         event.preventDefault();
 
-        let player = document.getElementById("player").value;
+        let id = document.getElementById("player").value;
         let score = document.getElementById("score").value;
         document.getElementById("score").value = "";
 
         primus.write({
-            "action": "Updated stats",
+            "action": "updateStats",
             "data": {
-                "player": player,
+                "id": id,
                 "score": score
             }
         })

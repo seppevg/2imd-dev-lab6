@@ -15,8 +15,8 @@ html(lang="en")
                 th 180's 
             each player in players
                 tr(id= player.id)
-                    td= player.name
-                    td= player.nickname
-                    td= player.score
+                    td(class="name")= player.name
+                    td(class="nickname")= player.nickname
+                    td(class="score")= player.score
         script(src="../primus/primus.js")
         script(src="../javascripts/app.js") 
